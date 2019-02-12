@@ -1,0 +1,8 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+        - /tmp/*.log
+output.logstash:
+  # The Logstash hosts
+  hosts: ["graylog:12201"]
